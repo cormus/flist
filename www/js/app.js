@@ -44,8 +44,11 @@ function App()
 	obj.iniIscroll = function()
 	{
 		document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
-		var myScroll = new IScroll('#wrapper', {
-			scrollbars: true
-		});
+		if(document.getElementsByClassName('wrapper').length > 0)
+		{
+			obj.myScroll = new IScroll('.wrapper', {
+				scrollbars: true
+			});
+		}
 	}
 }

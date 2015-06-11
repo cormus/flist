@@ -1,10 +1,14 @@
-<div class="width-100-l height-100 text-c" id="home">
-	<div id="wrapper">
+<div class="width-100-l height-100 text-c" id="home" ng-if="id_noticia == 0">
+	<div class="wrapper">
 		<div id="scroller">
 			<ul>
-				<li ng-repeat="n in ns">
-					<img class="width-100-l" src="http://www.omelhordaweb.com.br/papeldeparede/grande/834.jpg" />
-					<h1 class="width-100-l">Hellblade é o título que busca qualidade AAA em jogos independentes</h1>
+				<li ng-repeat="n in ns" ng-click="noticia(n.id)">
+					<div class="col-sm-4">
+						<img class="width-100-l" src="{{ n.img }}" />
+					</div>
+					<div class="col-sm-8">
+						<h1 class="width-100-l">{{ n.title }}</h1>
+					</div>
 				</li>
 				<li>Pretty row 2</li>
 				<li>Pretty row 3</li>

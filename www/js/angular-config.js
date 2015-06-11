@@ -17,7 +17,12 @@ angularConfig.config(function($routeProvider, $locationProvider)
       controller  : 'ContatoCtrl',
    }) 
    // para a rota '/contato', carregaremos o template contato.html e o controller 'ContatoCtrl'
-   .when('/tela', {
+   .when('/noticia', {
+      templateUrl : 'views/tela.html',
+      controller  : 'TelaCtrl',
+   })
+   // para a rota '/contato', carregaremos o template contato.html e o controller 'ContatoCtrl'
+   .when('/noticia/:id_noticia', {
       templateUrl : 'views/tela.html',
       controller  : 'TelaCtrl',
    })
