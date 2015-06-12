@@ -72,7 +72,8 @@ body {
 
     #toolbar h1
     {
-        top: 6px;
+        top: 0px;
+  		margin-top: 5px;
         color:#2D2F85;
         text-shadow: inherit;
     }
@@ -146,6 +147,44 @@ body {
 
 /*-------------- Aplicação ---------------------*/
 
+#content
+{
+	background: url('../img/app/bg-body.jpg');
+}
+
+#toolbar
+{
+	background: url('../img/app/bg-menu.jpg');
+}
+
+#toolbar h1
+{
+	color:#FFF;
+}
+
+.snap-drawer
+{
+	background-color: #FFF;
+}
+	.snap-drawer li > a
+	{
+		text-shadow: none; 
+		color: #F17904;
+		text-transform: uppercase;
+		color: #5F5D5D;
+	}
+		.nav>li>a:hover,
+		.nav>li.active a
+		{
+		  background-color: #610099;
+		  color: #FFFFFF;
+		}
+
+.home .logo
+{
+	max-width: 420px;
+}
+
 #scroller li
 {
 	height: auto;
@@ -163,3 +202,11 @@ body {
 	 border: 1px solid rgb(157, 157, 157);
 	 padding: 3px;
 }
+
+.btn-primary
+{
+	background-color: #610099;
+    border: none;
+}
+
+
