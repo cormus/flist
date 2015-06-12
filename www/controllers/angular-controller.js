@@ -1,24 +1,19 @@
 angularConfig.controller('HomeCtrl', ['$rootScope', '$location', '$routeParams', function($rootScope, $location, $routeParams) 
 {
+	appClass.snap.close();
 	$rootScope.activetab = $location.path();
 }]);
 
-angularConfig.controller('ContatoCtrl', function($rootScope, $location, $routeParams)
+angularConfig.controller('ContactCtrl', function($rootScope, $location, $routeParams)
 {
-    //fecha o snap
-    //appClass.snap.close();
-    //coloca uma classe se ativado no link do menu
+	appClass.snap.close();
 	$rootScope.activetab = $location.path();
 });  
 
-angularConfig.controller('TelaCtrl', ['$rootScope', '$location', '$routeParams', function($rootScope, $location, $routeParams) 
+angularConfig.controller('NewsCtrl', ['$rootScope', '$location', '$routeParams', function($rootScope, $location, $routeParams) 
 {
 	$rootScope.id_noticia = ($routeParams.id_noticia)? $routeParams.id_noticia: 0;
 	
-    //fecha o snap
-    //appClass.snap.close();
-    //coloca uma classe se ativado no link do menu
-    //$rootScope.activetab = $location.path();
 	
 	$rootScope.ns = [
 		{
@@ -52,5 +47,6 @@ angularConfig.controller('TelaCtrl', ['$rootScope', '$location', '$routeParams',
 	
 	window.setTimeout(function(){ appClass.iniIscroll(); }, 3000);
 	
+	appClass.snap.close();
 	$rootScope.activetab = $location.path();
 }]); 

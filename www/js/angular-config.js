@@ -12,19 +12,19 @@ angularConfig.config(function($routeProvider, $locationProvider)
       controller     : 'HomeCtrl',
    })
    // para a rota '/contato', carregaremos o template contato.html e o controller 'ContatoCtrl'
-   .when('/contato', {
-      templateUrl : 'views/contato.html',
-      controller  : 'ContatoCtrl',
+   .when('/contact', {
+      templateUrl : 'views/contact.html',
+      controller  : 'ContactCtrl',
    }) 
    // para a rota '/contato', carregaremos o template contato.html e o controller 'ContatoCtrl'
-   .when('/noticia', {
-      templateUrl : 'views/tela.html',
-      controller  : 'TelaCtrl',
+   .when('/news', {
+      templateUrl : 'views/news.html',
+      controller  : 'NewsCtrl',
    })
    // para a rota '/contato', carregaremos o template contato.html e o controller 'ContatoCtrl'
-   .when('/noticia/:id_noticia', {
-      templateUrl : 'views/tela.html',
-      controller  : 'TelaCtrl',
+   .when('/news/:id_noticia', {
+      templateUrl : 'views/news.html',
+      controller  : 'NewsCtrl',
    })
    // caso não seja nenhum desses, redirecione para a rota '/'
    .otherwise ({ redirectTo: '/' });

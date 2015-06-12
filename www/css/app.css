@@ -94,7 +94,7 @@ body {
 	position: absolute;
 	z-index: 1;
 	top: 0px;
-	bottom: 48px;
+	bottom: 0px;
 	left: 0;
 	width: 100%;
 	background: #ccc;
@@ -209,4 +209,7 @@ body {
     border: none;
 }
 
-
+.contato
+{
+	padding: 0 30px;
+}
